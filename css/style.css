@@ -404,7 +404,7 @@ div#preloader {
 }
 
 .sticky-logo h1 span {
-  color: #3ec1d5;
+  color: #8fc7dc;
 }
 .stick .main-menu ul.navbar-nav li.active a::after {
   border: 1px solid #fff;
@@ -2336,6 +2336,23 @@ span.email-notes {
   border-top: 1px solid #e5e5e5;
   margin: 0;
   padding-top: 30px;
+}
+
+/** my css **/
+
+.nivo-directionNav {
+  display: none;
+}
+
+.bioenergia-logo-mobile {
+  margin-top: 8px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+  .bioenergia-logo-mobile {
+    margin-top: 8px;
+  }
 }
 
 /*----------------------------------------
