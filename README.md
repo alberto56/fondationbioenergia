@@ -1,3 +1,5 @@
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/alberto56/fondationbioenergia/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/alberto56/fondationbioenergia/tree/master)
+
 Fondation Bioenergia Website
 =====
 
