@@ -15,7 +15,7 @@ echo ""
 echo ""
 echo "Checking for broken links"
 echo ""
-# ./scripts/check-broken-links.sh
+./scripts/check-broken-links.sh
 echo ""
 echo "Running end-to-end tests"
 echo ""
