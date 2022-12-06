@@ -37,15 +37,9 @@ it('It should be possible to interact with the site', async function() {
       // https://ourcodeworld.com/articles/read/1106/how-to-solve-puppeteer-timeouterror-navigation-timeout-of-30000-ms-exceeded
       timeout: 120000,
     });
-    console.log('wait for .clickme');
-    await page.waitForSelector('.clickme');
-    console.log('click .clickme');
-    await page.click('.clickme');
-    console.log('wait for .show-on-click');
-    await page.waitForSelector('.show-on-click');
-    console.log('take screenshot of after-click');
-    await screenshot(page, 'after-click', await page.content());
-    console.log('done this test.');
+    console.log('wait for #contact');
+    await page.waitForSelector('#contact');
+    await screenshot(page, 'contact', await page.content());
   }
   catch (error) {
     console.log('Exception alert');
