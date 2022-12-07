@@ -1,0 +1,19 @@
+items:
+  - title: Bioenergia Foundation
+    lang: en
+    homepage_image: /media/slider1beh.jpg
+    homepage_alt: "Community meeting outdoors"
+    home: /en.html
+    menu:
+      - id: home
+        label: Home
+        href: /jekyll/jekyll.html
+  - title: Fondation Bioenergia
+    home: /index.html
+    homepage_image: /media/slider1beh.jpg
+    homepage_alt: "Rencontre communautaire extérieure"
+    lang: fr
+    menu:
+      - id: home
+        label: Accueil
+        href: /jekyll/fr/
