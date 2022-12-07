@@ -74,16 +74,10 @@
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
                   {% for menu_item in page.menu %}
-                  <li class="active">
-                    <a class="page-scroll" href="#home">Accueil</a>
+                  <li{% if menu_item.active %} class="active"{% endif %}>
+                    <a class="page-scroll" href="{{ menu_item.url }}">{{ menu_item.label }}</a>
                   </li>
                   {% endfor %}
-                  <li>
-                    <a class="page-scroll" href="#about">À propos</a>
-                  </li>
-                  <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                  </li>
                   <li>
                     <a class="page-scroll" href="{{ page.lang_url }}">{{ page.lang_name }}</a>
                   </li>
@@ -118,16 +112,18 @@
               <div class="slider-content">
                 <!-- layer 1 -->
                 <div class="layer-1-1 hidden-xs">
-                  <h2 class="title1">L'énergie de l'entreprenariat</h2>
+                  <h2 class="title1">{{ page.supertitle_on_image }}</h2>
                 </div>
                 <!-- layer 2 -->
                 <div class="layer-1-2">
-                  <h1 class="title2">Supportez un écosystème d'affaires pour une économie et un environnement durables</h1>
+                  <h1 class="title2">{{ page.title_on_image }}</h1>
                 </div>
                 <!-- layer 3 -->
                 <div class="layer-1-3 hidden-xs" >
-                  <a class="ready-btn right-btn page-scroll" href="#contact">Nous contacter</a>
+                  <a class="ready-btn right-btn page-scroll" href="#contact">{{ page.contact_us }}</a>
+                  <!--
                   <a class="ready-btn page-scroll" href="http://bioenergiehaiti.org/don">Faire un don</a>
+                  -->
                 </div>
               </div>
             </div>
