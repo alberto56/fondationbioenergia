@@ -11,11 +11,6 @@ fi
 
 FILE="$1"
 
-# do-not-commit contains actual rendered DOM, and this site is using a
-# carousel which strips alt tags. We do not have the resources to
-# fix this, so we will examine only the pre-manipulated raw source.
-rm -rf do-not-commit
-
 echo ""
 echo "*** Validating HTML on file $FILE ***"
 echo ""
