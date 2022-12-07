@@ -16,3 +16,17 @@
         - label: "Other language URL"
           name: "lang_url"
           widget: "string"
+        - label: "Menu"
+          name: "menu"
+          widget: "list"
+          fields:
+            - label: "Label, for example Contact"
+              name: "contact"
+              widget: "string"
+            - label: "Active or not"
+              name: "active"
+              widget: "boolean"
+              required: false
+            - label: "URL, for example #contact"
+              name: "url"
+              widget: "string"

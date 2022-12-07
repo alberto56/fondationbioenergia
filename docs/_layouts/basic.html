@@ -73,9 +73,11 @@
               <!-- Collect the nav links, forms, and other content for toggling -->
               <div class="collapse navbar-collapse main-menu bs-example-navbar-collapse-1" id="navbar-example">
                 <ul class="nav navbar-nav navbar-right">
+                  {% for menu_item in page.menu %}
                   <li class="active">
                     <a class="page-scroll" href="#home">Accueil</a>
                   </li>
+                  {% endfor %}
                   <li>
                     <a class="page-scroll" href="#about">À propos</a>
                   </li>
@@ -83,7 +85,7 @@
                     <a class="page-scroll" href="#contact">Contact</a>
                   </li>
                   <li>
-                    <a class="page-scroll" href="http://bioenergiehaiti.org/don">Dons</a>
+                    <a class="page-scroll" href="{{ page.lang_url }}">{{ page.lang_name }}</a>
                   </li>
                   <!--<li>
                     <a class="page-scroll" href="#team">Conseil</a>
