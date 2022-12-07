@@ -140,7 +140,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="section-headline text-center">
-            <h2>Fondation Bioenergia</h2>
+            <h2>{{ page.main_title }}</h2>
           </div>
         </div>
       </div>
@@ -150,7 +150,7 @@
           <div class="well-left">
             <div class="single-well">
               <a href="#">
-                  <img src="img/about/1beh.jpg" alt="">
+                  <img src="{{ page.main_img }}" alt="{{ page.main_img_alt }}">
                 </a>
             </div>
           </div>
@@ -160,19 +160,9 @@
           <div class="well-middle">
             <div class="single-well">
               <a href="#">
-                <h4 class="sec-head">La Fondation Bioenergia a pour mission de soutenir des projets d'énergie propre et de valorisation des matières résiduelles dans les pays en voie de développement.</h4>
+                <h4 class="sec-head">{{ page.main_sub }}</h4>
               </a>
-              <p>
-                Ces pays sont les plus pénalisés par les changements climatiques et souffrent d'un manque chronique de financement des opérations de gestion des matières résiduelles, entraînant d'importants impacts sur la santé et l'économie de leurs populations, et sur l'environnement en général. Voilà pourquoi la Fondation appuie en particulier les projets de valorisation énergétique des matières résiduelles.
-              </p>
-              <ul>
-                <li>
-                  <i class="fa fa-check"></i> Projets concrets sur le terrain
-                </li>
-                <li>
-                  <i class="fa fa-check"></i> Infrastructure durable pour la communauté
-                </li>
-              </ul>
+              {{ page.main_text | markdown }}
             </div>
           </div>
         </div>
@@ -194,7 +184,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="text-center">
-            <p>Contactez-nous à l'adresse courriel <a href="mailto:admin@fondationbioenergia.org">admin@fondationbioenergia.org</a></p>
+            <p>{{ page.contact_us }}: <a href="mailto:admin@fondationbioenergia.org">admin@fondationbioenergia.org</a></p>
           </div>
         </div>
       </div>
