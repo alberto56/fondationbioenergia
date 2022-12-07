@@ -8,10 +8,16 @@
         create: false
         file: "docs/en.html"
         fields:
+        - name: "lang"
+          widget: "hidden"
+          default: "en"
 {% include netlifycms_fields.html %}
       - label: "Site en français"
         name: "page_fr"
         create: false
         file: "docs/index.html"
         fields:
+        - name: "lang"
+          widget: "hidden"
+          default: "fr"
 {% include netlifycms_fields.html %}
